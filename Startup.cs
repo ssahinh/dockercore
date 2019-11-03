@@ -47,6 +47,8 @@ namespace DockerTest
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            PrepDB.PrepPopulation(app);
         }
     }
 }

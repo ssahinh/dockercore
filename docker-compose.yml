@@ -4,6 +4,7 @@ services:
     image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
     environment:
       ACCEPT_EULA: "Y"
+      SA_PASSWORD: "<YourStrong@Passw0rd>"
       MSSQL_PID: Express
     ports:
       - "1433:1433"

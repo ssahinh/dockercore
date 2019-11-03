@@ -7,5 +7,7 @@ namespace DockerTest
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)
         {}
+
+        public DbSet<TestModel> TestModelItems { get; set;}
     }
 }
